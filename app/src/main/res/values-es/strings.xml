@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sincronizador WebDAV</string>
+    <string name="conta">Cuenta del servidor</string>
+    <string name="tipo_servidor">Tipo de servidor</string>
+    <string name="servidor">Dirección del servidor</string>
+    <string name="servidor_dica_nextcloud">ej.: https://nube.tusitio.com</string>
+    <string name="servidor_dica_webdav">ej.: https://servidor.com/webdav/</string>
+    <string name="usuario">Usuario</string>
+    <string name="senha">Contraseña (o contraseña de app)</string>
+    <string name="testar_salvar">Conectar</string>
+    <string name="testando">Conectando…</string>
+    <string name="conectado">¡Conectado!</string>
+    <string name="erro_senha">Usuario o contraseña incorrectos.</string>
+    <string name="erro_servidor">Servidor no encontrado. Revisa la dirección y la conexión.</string>
+    <string name="erro_certificado">Problema con el certificado de seguridad (https) del servidor.</string>
+    <string name="erro_webdav">Esta dirección no parece un servidor WebDAV (código %1$d).</string>
+    <string name="erro_geral">Error: %1$s</string>
+    <string name="sair">Cerrar sesión</string>
+    <string name="sair_pergunta">¿Cerrar sesión? También se borrarán las sincronizaciones.</string>
+    <string name="arquivos">📁 Archivos</string>
+    <string name="sincronizar">🔄 Sincronizar</string>
+    <string name="pasta_vazia">Carpeta vacía</string>
+    <string name="carregando">Cargando…</string>
+    <string name="enviar_arquivo">Subir archivo</string>
+    <string name="nova_pasta">Carpeta nueva</string>
+    <string name="nome_pasta">Nombre de la carpeta</string>
+    <string name="criar">Crear</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="baixar">Descargar</string>
+    <string name="excluir">Eliminar</string>
+    <string name="excluir_pergunta">¿Eliminar \"%1$s\" del servidor?</string>
+    <string name="enviando">Subiendo %1$s… %2$d%%</string>
+    <string name="baixando">Descargando %1$s… %2$d%%</string>
+    <string name="enviado">¡Subido!</string>
+    <string name="baixado">Guardado en Descargas › Sincronizador</string>
+    <string name="mais">Más opciones</string>
+    <string name="voltar">Carpeta superior</string>
+    <string name="nova_sincronia">Nueva sincronización</string>
+    <string name="nenhuma_sincronia">Elige una carpeta del teléfono para enviar al servidor (copia) o para recibir archivos de una carpeta del servidor.</string>
+    <string name="pasta_celular">Carpeta del teléfono</string>
+    <string name="escolher">Elegir…</string>
+    <string name="pasta_servidor">Carpeta en el servidor</string>
+    <string name="direcao">Dirección</string>
+    <string name="enviar_servidor">Teléfono → Servidor (copia)</string>
+    <string name="baixar_servidor">Servidor → Teléfono</string>
+    <string name="automatico">Sincronizar solo</string>
+    <string name="salvar">Guardar</string>
+    <string name="escolha_pasta">Elige la carpeta del teléfono</string>
+    <string name="sincronizar_agora">Sincronizar ahora</string>
+    <string name="sincronizando">Sincronizando… %1$s</string>
+    <string name="resultado">%1$s: %2$d subidos, %3$d descargados, %4$d errores</string>
+    <string name="nunca">Aún sin sincronizar</string>
+    <string name="so_wifi">Solo con Wi-Fi</string>
+    <string name="so_carregando">Solo cargando</string>
+    <string name="intervalo">Sincronización automática cada 6 horas</string>
+    <string name="apagar_sincronia">¿Quitar esta sincronización? No se borra ningún archivo.</string>
+    <string name="canal">Sincronización</string>
+    <string name="notif_titulo">Sincronización terminada</string>
+    <string name="notif_erro">Sincronización con errores</string>
+    <string name="raiz">Inicio</string>
+    <string-array name="tipos">
+        <item>Nextcloud / ownCloud</item>
+        <item>Otro servidor WebDAV</item>
+    </string-array>
+</resources>

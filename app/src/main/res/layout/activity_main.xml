@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/raiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/texto"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contaTexto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                android:textColor="@color/texto2"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnConta"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/conta"
+            android:src="@drawable/ic_config"
+            android:tint="@color/texto2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Arquivos do servidor -->
+        <LinearLayout
+            android:id="@+id/painelArquivos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="8dp"
+                android:paddingEnd="16dp">
+
+                <ImageButton
+                    android:id="@+id/btnSubir"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/voltar"
+                    android:src="@drawable/ic_seta_cima"
+                    android:tint="@color/texto" />
+
+                <TextView
+                    android:id="@+id/caminho"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="start"
+                    android:singleLine="true"
+                    android:textColor="@color/texto"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ListView
+                    android:id="@+id/lista"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:divider="@null"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="12dp" />
+
+                <TextView
+                    android:id="@+id/vazio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    android:textColor="@color/texto2"
+                    android:textSize="15sp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/progresso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/chip"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:ellipsize="middle"
+                android:textColor="@color/texto"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <Button
+                    android:id="@+id/btnNovaPasta"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/chip"
+                    android:drawableStart="@drawable/ic_nova_pasta"
+                    android:drawableTint="@color/destaque"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="@string/nova_pasta"
+                    android:textAllCaps="false"
+                    android:textColor="@color/texto" />
+
+                <Button
+                    android:id="@+id/btnEnviar"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/botao"
+                    android:drawableStart="@drawable/ic_upload"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="@string/enviar_arquivo"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Sincronizações -->
+        <ScrollView
+            android:id="@+id/painelSincronia"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:id="@+id/listaSincronias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <Button
+                    android:id="@+id/btnNovaSincronia"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/botao"
+                    android:drawableStart="@drawable/ic_sync"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="40dp"
+                    android:text="@string/nova_sincronia"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/cartao"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/intervalo"
+                        android:textColor="@color/texto2"
+                        android:textSize="13sp" />
+
+                    <Switch
+                        android:id="@+id/soWifi"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="@string/so_wifi"
+                        android:textColor="@color/texto"
+                        android:textSize="15sp" />
+
+                    <Switch
+                        android:id="@+id/soCarregando"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="@string/so_carregando"
+                        android:textColor="@color/texto"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

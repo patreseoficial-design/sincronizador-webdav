@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cartao"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/texto"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnApagar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/excluir"
+            android:src="@drawable/ic_fechar"
+            android:tint="@color/texto2" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/texto2"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/ultimo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/texto"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/automatico"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="@string/automatico"
+            android:textColor="@color/texto"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnAgora"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/chip"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/sincronizar_agora"
+            android:textAllCaps="false"
+            android:textColor="@color/destaque" />
+    </LinearLayout>
+</LinearLayout>

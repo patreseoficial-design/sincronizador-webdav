@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WebDAV Sync</string>
+    <string name="conta">Server account</string>
+    <string name="tipo_servidor">Server type</string>
+    <string name="servidor">Server address</string>
+    <string name="servidor_dica_nextcloud">e.g. https://cloud.example.com</string>
+    <string name="servidor_dica_webdav">e.g. https://server.com/webdav/</string>
+    <string name="usuario">Username</string>
+    <string name="senha">Password (or app password)</string>
+    <string name="testar_salvar">Connect</string>
+    <string name="testando">Connecting…</string>
+    <string name="conectado">Connected!</string>
+    <string name="erro_senha">Wrong username or password.</string>
+    <string name="erro_servidor">Server not found. Check the address and your connection.</string>
+    <string name="erro_certificado">Problem with the server security certificate (https).</string>
+    <string name="erro_webdav">This address does not look like a WebDAV server (code %1$d).</string>
+    <string name="erro_geral">Error: %1$s</string>
+    <string name="sair">Sign out</string>
+    <string name="sair_pergunta">Sign out? Your sync setups will also be removed.</string>
+    <string name="arquivos">📁 Files</string>
+    <string name="sincronizar">🔄 Sync</string>
+    <string name="pasta_vazia">Empty folder</string>
+    <string name="carregando">Loading…</string>
+    <string name="enviar_arquivo">Upload file</string>
+    <string name="nova_pasta">New folder</string>
+    <string name="nome_pasta">Folder name</string>
+    <string name="criar">Create</string>
+    <string name="cancelar">Cancel</string>
+    <string name="baixar">Download</string>
+    <string name="excluir">Delete</string>
+    <string name="excluir_pergunta">Delete \"%1$s\" from the server?</string>
+    <string name="enviando">Uploading %1$s… %2$d%%</string>
+    <string name="baixando">Downloading %1$s… %2$d%%</string>
+    <string name="enviado">Uploaded!</string>
+    <string name="baixado">Saved to Downloads › Sincronizador</string>
+    <string name="mais">More options</string>
+    <string name="voltar">Up</string>
+    <string name="nova_sincronia">New sync</string>
+    <string name="nenhuma_sincronia">Choose a phone folder to send to the server (backup) or to receive files from a server folder.</string>
+    <string name="pasta_celular">Phone folder</string>
+    <string name="escolher">Choose…</string>
+    <string name="pasta_servidor">Server folder</string>
+    <string name="direcao">Direction</string>
+    <string name="enviar_servidor">Phone → Server (backup)</string>
+    <string name="baixar_servidor">Server → Phone</string>
+    <string name="automatico">Sync automatically</string>
+    <string name="salvar">Save</string>
+    <string name="escolha_pasta">Choose the phone folder</string>
+    <string name="sincronizar_agora">Sync now</string>
+    <string name="sincronizando">Syncing… %1$s</string>
+    <string name="resultado">%1$s: %2$d uploaded, %3$d downloaded, %4$d errors</string>
+    <string name="nunca">Not synced yet</string>
+    <string name="so_wifi">Wi-Fi only</string>
+    <string name="so_carregando">Only while charging</string>
+    <string name="intervalo">Automatic sync every 6 hours</string>
+    <string name="apagar_sincronia">Remove this sync? No files are deleted.</string>
+    <string name="canal">Sync</string>
+    <string name="notif_titulo">Sync finished</string>
+    <string name="notif_erro">Sync finished with errors</string>
+    <string name="raiz">Home</string>
+    <string-array name="tipos">
+        <item>Nextcloud / ownCloud</item>
+        <item>Other WebDAV server</item>
+    </string-array>
+</resources>

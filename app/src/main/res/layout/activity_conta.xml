@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/raiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_nuvem"
+            android:tint="@color/destaque" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/conta"
+            android:textColor="@color/texto"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tipo_servidor"
+            android:textColor="@color/texto2"
+            android:textSize="13sp" />
+
+        <Spinner
+            android:id="@+id/spTipo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/servidor"
+            android:textColor="@color/texto2"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/campoServidor"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/campo"
+            android:inputType="textUri"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textColor="@color/texto" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/usuario"
+            android:textColor="@color/texto2"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/campoUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/campo"
+            android:inputType="text"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textColor="@color/texto" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/senha"
+            android:textColor="@color/texto2"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/campoSenha"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/campo"
+            android:inputType="textPassword"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textColor="@color/texto" />
+
+        <TextView
+            android:id="@+id/mensagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/erro"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnConectar"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/botao"
+            android:text="@string/testar_salvar"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnSair"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/sair"
+            android:textAllCaps="false"
+            android:textColor="@color/erro"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

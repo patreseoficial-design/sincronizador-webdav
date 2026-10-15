@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fundo">#FFF3F6EE</color>
+    <color name="cartao">#FFFFFFFF</color>
+    <color name="chip">#FFE2EAD6</color>
+    <color name="texto">#FF1E2618</color>
+    <color name="texto2">#FF6A7562</color>
+    <color name="destaque">#FF5C9A2B</color>
+    <color name="pasta">#FFF2B33D</color>
+    <color name="erro">#FFD64545</color>
+</resources>
