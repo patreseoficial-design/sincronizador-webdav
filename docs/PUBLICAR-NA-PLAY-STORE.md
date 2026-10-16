@@ -64,7 +64,11 @@ Seus arquivos no SEU servidor. Sincronize e faça backup do celular com Nextclou
 - Imagem de destaque 1024 × 500 px
 - Pelo menos 2 capturas de tela: a tela de conta, a lista de arquivos do servidor e a tela de sincronizações
 
-**Política de privacidade (URL):** o texto está em [politica-de-privacidade.md](politica-de-privacidade.md). O link precisa abrir para qualquer pessoa: copie o texto para o seu repositório público `politica-privacidade` (por exemplo `sincronizador-webdav.md`) e use o link desse arquivo.
+**Política de privacidade (URL):**
+
+```
+https://github.com/patreseoficial-design/politica-privacidade/blob/main/sincronizador-webdav.md
+```
 
 ---
 
